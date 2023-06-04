@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@500&family=Quicksand:wght@300;400;600;800&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--button-color); 
+    border-radius: 5px;
+}
+
+:root{
+    --text-color:#a7ff83;
+    --button-color:#0A2647;
+    --main-color:#fefefe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(144deg, rgba(192, 192, 192, 0.03) 0%, rgba(192, 192, 192, 0.03) 23%,rgba(36, 36, 36, 0.03) 23%, rgba(36, 36, 36, 0.03) 29%,rgba(248, 248, 248, 0.03) 29%, rgba(248, 248, 248, 0.03) 44%,rgba(250, 250, 250, 0.03) 44%, rgba(250, 250, 250, 0.03) 61%,rgba(36, 36, 36, 0.03) 61%, rgba(36, 36, 36, 0.03) 100%),linear-gradient(200deg, rgba(81, 81, 81, 0.03) 0%, rgba(81, 81, 81, 0.03) 68%,rgba(36, 36, 36, 0.03) 68%, rgba(36, 36, 36, 0.03) 82%,rgba(187, 187, 187, 0.03) 82%, rgba(187, 187, 187, 0.03) 95%,rgba(13, 13, 13, 0.03) 95%, rgba(13, 13, 13, 0.03) 97%,rgba(107, 107, 107, 0.03) 97%, rgba(107, 107, 107, 0.03) 100%),linear-gradient(228deg, rgba(248, 248, 248, 0.03) 0%, rgba(248, 248, 248, 0.03) 25%,rgba(125, 125, 125, 0.03) 25%, rgba(125, 125, 125, 0.03) 28%,rgba(228, 228, 228, 0.03) 28%, rgba(228, 228, 228, 0.03) 32%,rgba(185, 185, 185, 0.03) 32%, rgba(185, 185, 185, 0.03) 84%,rgba(82, 82, 82, 0.03) 84%, rgba(82, 82, 82, 0.03) 100%),linear-gradient(244deg, rgba(15, 15, 15, 0.03) 0%, rgba(15, 15, 15, 0.03) 35%,rgba(224, 224, 224, 0.03) 35%, rgba(224, 224, 224, 0.03) 52%,rgba(251, 251, 251, 0.03) 52%, rgba(251, 251, 251, 0.03) 69%,rgba(83, 83, 83, 0.03) 69%, rgba(83, 83, 83, 0.03) 72%,rgba(219, 219, 219, 0.03) 72%, rgba(219, 219, 219, 0.03) 100%),linear-gradient(338deg, rgba(57, 57, 57, 0.03) 0%, rgba(57, 57, 57, 0.03) 32%,rgba(166, 166, 166, 0.03) 32%, rgba(166, 166, 166, 0.03) 54%,rgba(161, 161, 161, 0.03) 54%, rgba(161, 161, 161, 0.03) 56%,rgba(158, 158, 158, 0.03) 56%, rgba(158, 158, 158, 0.3) 61%,rgba(25, 25, 25, 0.03) 61%, rgba(25, 25, 25, 0.03) 100%),linear-gradient(90deg, rgb(225, 225, 225),rgb(231, 231, 231));
+    padding: 20px;
+    /* overflow: hidden; */
+}
+
+.full-receipt{
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid var(--button-color);
+    
+}
+
+
+.receipt-img-box .receipt-img {
+    width: 100%;
+   height: 630px;
+}
+
+.receipt-img-box .receipt-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: all 0.6s;
+    cursor: pointer;
+    border: 1px solid var(--button-color);
+
+}
+
+.main-content{
+    position: absolute;
+    top: 2%;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.side-icon{
+    color: var(--button-color);
+    font-size: 17px;
+}
+
+.logo{
+    position: absolute;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+}
+
+.logoPhoto{
+    padding-right: 10px;
+    height: 40px;
+}
+
+.logoText{
+    font-size: 50px;
+    color: var(--text-color);
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 5px 3px 4px var(--button-color)
+}
+
+.fa-umbrella-beach{
+    color:var(--text-color);
+    font-size: 20px; 
+    margin-right: 15px;
+    text-shadow: 5px 3px 3px var(--button-color);
+}
+
+.addressing{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.addressing span{
+    font-family: 'Quicksand',sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.line{
+    margin-top: 13px;
+    background-color: var(--button-color);
+    height: 2px;
+    border-radius: 10px;
+    line-height: 10%;
+}
+.line2{
+    margin-top: 1px;
+    background-color: var(--button-color);
+    height: 2px;
+    border-radius: 10px;
+    line-height: 10%;
+}
+
+/* receipt-content */
+.receipt-content {
+    color: var(--button-color);
+}
+
+.paid-by{
+    display: flex;
+    flex-direction:column ;
+    text-align: left;
+    margin-left: 160px;
+}
+
+.paid-by h5{
+    font-size: 23px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.paid-by > span{
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04rem;
+}
+
+.book-details{
+    width: 350px;
+}
+
+.book-details h5{
+    font-size: 23px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.book-details .bookin {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04rem;
+}
+
+.book-details .bookin .bookin-facts{
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 600;
+}
+
+.receipt-content-2{
+    color: var(--button-color);
+    margin-top: 70px;
+}
+
+.receipt-details{
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+    margin-left: 300px;
+    width: 300px;
+}
+
+.receipt-details h5{
+    font-size: 23px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+    text-align: center;
+}
+
+.receipt-details .cash{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04rem;
+}
+
+.receipt-details .cash .cash-facts{
+    font-size: 16px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 600;
+}
+
+.card-info{
+    display: flex;
+    flex-direction:column ;
+    width: 300px;
+    margin-left: 200px;
+    padding-top: 40px;
+}
+
+.card-info h5{
+    font-size: 23px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+    text-align: center;
+}
+
+.card-info .cardpayment{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04rem;
+}
+
+.card-info .cardpayment .cardpayment-facts{
+    font-size: 16px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 600;
+
+}
+
+.message{
+    text-align: c;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.message strong{
+    font-size: 15px;
+    font-family: 'Lora',serif;
+    color: var(--button-color);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+
+}

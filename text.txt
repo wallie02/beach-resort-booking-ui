@@ -1,0 +1,480 @@
+about
+            <div class="about reveal" id="about">
+                 <section class="about-main ">
+                    <h3 class="about-title">Introduction About Us</h3>
+
+                    <div class="about-section mt-5">
+
+                        <!-- about-1 -->
+                        <div class="about-box mb-5">
+                            <div class="about-box-img">
+                                <img src="./images/about1.jpg" class="p-1 border border-dark">
+                            </div>
+                        </div>
+
+                        <div class="about-box mb-5">
+                            <div class="about-box-text">
+                                <p>Shelter resort is established in 2022, and situated in Bali, set 14 km from Canggu beach, Avana Curve VillaBamboo Villa with Pool and View offers accommodation in Muaratembesi with access to an indoor pool and also features accommodation with free bikes, free private parking and a garden.</p>
+                            </div>
+                        </div>
+
+                        <!-- about-2 -->
+                        <div class="about-box mb-5">
+                            <div class="about-box-text">
+                                <p>Shelter resort is established in 2022. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe veniam dolores natus dolor velit itaque ut vel voluptatum in. Tempora, nihil. Deleniti optio veniam ab ipsa aut libero consectetur ratione!</p>
+                            </div>
+                        </div>
+
+                        <div class="about-box mb-5">
+                            <div class="about-box-img">
+                                <img src="./images/about2.jpg" class="p-1 border border-dark">
+                            </div>
+                        </div>
+
+                        <!-- about-3 -->
+                        <div class="about-box mb-5">
+                            <div class="about-box-img">
+                                <img src="./images/about3.jpg" class="p-1 border border-dark">
+                            </div>
+                        </div>
+
+                        <div class="about-box">
+                            <div class="about-box-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ullam fugiat nisi quidem ad sapiente doloribus! Suscipit veniam dolorum vel odit? Error facere quo optio maxime! Veritatis a officia numquam.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                 </section>
+            </div>
+
+
+gallery
+            <!-- Gallery -->
+            <section class="gallery reveal" id="gallery">
+                <div class="gallery-main ">
+                    <div class="gallery-title">
+                        <h5>Gallery photos</h5>
+                    </div>
+    
+                    <div class="gallery-img">
+
+                            <input type="radio" name="slide" id="p1" checked>
+                            <label for="p1">
+                                <img src="./images/gallery1.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery1.jpg">
+
+                            <input type="radio" name="slide" id="p2">
+                            <label for="p2">
+                                <img src="./images/gallery2.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery2.jpg">
+    
+                            <input type="radio" name="slide" id="p3">
+                            <label for="p3">
+                                <img src="./images/gallery8.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery8.jpg">
+
+                            <input type="radio" name="slide" id="p4">
+                            <label for="p4">
+                                <img src="./images/gallery4.webp" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery4.webp">
+
+                            <input type="radio" name="slide" id="p5">
+                            <label for="p5">
+                                <img src="./images/gallery9.webp" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery9.webp">
+                    </div>
+
+                </div>
+            </section>            <!-- Gallery -->
+            <section class="gallery reveal" id="gallery">
+                <div class="gallery-main ">
+                    <div class="gallery-title">
+                        <h5>Gallery photos</h5>
+                    </div>
+    
+                    <div class="gallery-img">
+
+                            <input type="radio" name="slide" id="p1" checked>
+                            <label for="p1">
+                                <img src="./images/gallery1.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery1.jpg">
+
+                            <input type="radio" name="slide" id="p2">
+                            <label for="p2">
+                                <img src="./images/gallery2.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery2.jpg">
+    
+                            <input type="radio" name="slide" id="p3">
+                            <label for="p3">
+                                <img src="./images/gallery8.jpg" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery8.jpg">
+
+                            <input type="radio" name="slide" id="p4">
+                            <label for="p4">
+                                <img src="./images/gallery4.webp" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery4.webp">
+
+                            <input type="radio" name="slide" id="p5">
+                            <label for="p5">
+                                <img src="./images/gallery9.webp" width="100" height="50">
+                            </label>
+                            <img src="./images/gallery9.webp">
+                    </div>
+
+                </div>
+            </section>
+
+
+facilities
+
+            <section class="facilities reveal" id="facilities">
+                <div class="fal-main ">
+                    <div class="fal-title">
+                        <h3>Facilities Services</h3>
+                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <ul class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                               <div class="carousel-main">
+                                    <img src="./images/barRestaurant.jpg" >
+                                    <div class="carousel-caption ">
+                                        <h5>Bar & Restaurant </h5>
+                                        <p>We may be a little pricey, but our quality and service are unsurpassed!</p>
+                                    </div>
+                               </div>
+                            </div>   
+
+                            <div class="carousel-item ">
+                                <div class="carousel-main">
+                                    <img src="./images/surfing.jpg">
+                                    <div class="carousel-caption ">
+                                        <h5>Surfing & Water Sport</h5>
+                                        <p>We provide free surfing and some water sport for our customers!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                               <div class="carousel-main">
+                                    <img src="./images/airportPickup.jpg">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Airport Pickup</h5>
+                                        <p>Pickup is planned to make transportation from the airport easy for guests!</p>
+                                    </div>
+                               </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="carousel-main">
+                                    <img src="./images/buffet.webp" >
+                                    <div class="carousel-caption ">
+                                        <h5>Buffet with Self-Service</h5>
+                                        <p>Buffets are provided for self-consumption and for the convenience of guests!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="carousel-main">
+                                    <img src="./images/smallshop.webp">
+                                    <div class="carousel-caption ">
+                                        <h5>Souvenirs Store</h5>
+                                        <p>There is a small store in the hotel where you can buy beach souvenirs!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="carousel-item "> 
+                                <div class="carousel-main">
+                                    <img src="./images/gymroom.jpg" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Gym Room</h5>
+                                        <p>A 24-hour gym is also provided for guests' health!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="carousel-control-next"  data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            background-image: linear-gradient(33deg, transparent 0%, transparent 8%,rgba(9, 9, 9,0.02) 8%, rgba(9, 9, 9,0.02) 59%,transparent 59%, transparent 100%),linear-gradient(234deg, transparent 0%, transparent 32%,rgba(225, 225, 225,0.02) 32%, rgba(225, 225, 225,0.02) 99%,transparent 99%, transparent 100%),linear-gradient(312deg, transparent 0%, transparent 24%,rgba(93, 93, 93,0.02) 24%, rgba(93, 93, 93,0.02) 58%,transparent 58%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+
+
+Facilities UI
+https://codepen.io/iamdineshbasnet/pen/XWxpjaQ
+
+
+./ room card
+
+                                <div class="rooms">
+                                        <div class="spk-img">
+                                            <img class="img-fluid" src="./images/singleRoom1.jpg" alt="trainer-img" />
+                                            <ul>
+                                                <li>
+                                                    <a href="../html/details.html"><i class='bx bxs-info-circle room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="../html/receipt.html"><i class='bx bx-shopping-bag room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-envelope room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-phone-call room-icons' ></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="room-info">
+                                            <div class="d-flex justify-content-between my-1">
+                                                <h3 class="text-center">Single Room <sub class="rating">(5)</sub></h3>
+                                                <div class="d-flex">
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                </div>
+                                            </div>
+                                            <span class="facilites text-muted">Coffee Kit, Toiletries, Personal care, Free Wi-Fi,...</span>
+                                            <div class="price text-muted text-center my-2">guranteed best price</div>
+                                        </div>
+                                </div>           
+
+
+/* Room category */
+.col-lg-3{
+    margin:0px 80px 0px 5px;
+}
+
+.main-room {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin: 20px auto 0 auto;
+}
+.main-room .rooms{
+    transition: all 0.4s;
+    width: 300px;
+    height: 345px;
+}
+.main-room .rooms:hover {
+    box-shadow: 0 0 15px 1px var(--button-color);
+    transform: scale(1.02);
+    border-radius: 6px;
+    transition: all 0.4s;
+    border: 1px solid var(--button-color);
+}
+.main-room .rooms .spk-img {
+    position: relative;
+}
+.main-room .rooms .spk-img:before {
+    background: var(--button-color);
+    opacity: 0.6;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.4s;
+    z-index: 5;
+}
+.main-room .rooms .spk-img:hover:before {
+
+    transform: scale(1);
+}
+.main-room .rooms .spk-img img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--text-color);
+    padding: 3px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.main-room .rooms .spk-img ul {
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 40%;
+    width: 100px;
+    padding-left: 12px;
+    line-height: 3;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.main-room .rooms .spk-img ul:before {
+    position: absolute;
+    content: "";
+    height: 110px;
+    width: 110px;
+    background: transparent;
+    top: -15%;
+    left: -15px;
+    border: 1px solid var(--text-color);
+    transform: rotate(44deg) scale(1.4);
+    opacity: 0;
+    transition: all 0.4s;
+}
+.main-room .rooms .spk-img ul li {
+    display: inline-block;
+    margin: 0 3px;
+    transition: all 0.5s ease 0.2s;
+    margin: 0 5px;
+}
+
+.main-room .rooms .spk-img ul li a .room-icons{
+    color:var(--main-color);
+    font-size: 18px;
+    height: 28px;
+    line-height: 21px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+
+.main-room .rooms .spk-img ul li a .room-icons:hover {
+    color: var(--text-color);
+    transform: translateY(10px);
+}
+.main-room .rooms .spk-img ul li:nth-child(1) {
+    transform: translate3d(-53px, -50px, 0);
+}
+.main-room .rooms .spk-img ul li:nth-child(2) {
+
+    transform: translate3d(53px, -50px, 0);
+}
+.main-room .rooms .spk-img ul li:nth-child(3) {
+
+    transform: translate3d(-53px, 50px, 0);
+}
+.main-room .rooms .spk-img ul li:nth-child(4) {
+
+    transform: translate3d(53px, 50px, 0);
+}
+.main-room .rooms .spk-img:hover ul {
+    left: 35%;
+    opacity: 1;
+    z-index: 9;
+}
+.main-room .rooms .spk-img:hover ul:before {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+.main-room .rooms .spk-img:hover ul li:nth-child(1),
+.main-room .rooms .spk-img:hover ul li:nth-child(2),
+.main-room .rooms .spk-img:hover ul li:nth-child(3),
+.main-room .rooms .spk-img:hover ul li:nth-child(4) {
+    transform: translate3d(0, 0, 0);
+}
+
+.main-room .rooms .room-info {
+    background-color:var(--main-color);
+    padding: 10px 5px;
+    height: 144px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.main-room .rooms .room-info h3 {
+    color: var(--button-color);
+    font-size: 20px;
+    font-family: 'Lora',sans-serif;
+    letter-spacing: 1.1px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.main-room .rooms .room-info p {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #656565;
+}                                
+
+//profile dropdown
+  <div class="dropdown">
+    <a href="" class="btn text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="../images/woman.png" class="user-img">
+    </a>
+        <ul class="dropdown-menu mt-1">
+            <li><a href="" class="dropdown-item"><i class="fa-solid fa-user-tie me-2"></i>Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a href="../html/login.html" class="dropdown-item"><i class="fa-solid fa-unlock me-2"></i>Login</a></li>
+        </ul>
+    </div>  
+
+.user-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.dropdown{  
+    outline: none;
+    border: none;
+    font-size: 20px;
+    transition: all 0.5s;
+    margin-right: 50px;
+
+}
+
+.dropdown:active{
+    transform: scale(1.1);
+}
+
+.dropdown .dropdown-menu{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px;
+    /* background-color: rgb(255, 255, 255,0.3); */
+    background-color: var(--button-color);
+    opacity: 0.8;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+    text-align: center;
+    font-family:'Quicksand', sans-serif ;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--main-color);
+    letter-spacing: 1.05px;
+    transition: all 0.7s;
+}
+
+.dropdown .dropdown-menu li:hover .dropdown-item{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: 600;
+}

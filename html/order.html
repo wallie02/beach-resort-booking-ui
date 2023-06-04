@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleOrder.css">
+     <!-- box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Boostrap Css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <!-- Flatpickr -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+     <!-- Intel phone number -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+     <!-- JQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Beach Resort Booking</title>
+</head>
+<body>
+
+        <div class="order-section">
+                <!-- top navbar -->
+                <nav class="navbar fixed-top">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span class="logoText">Shelter <sub>resort</sub> </span>
+                        </div>
+            
+                        <a class="navbar-toggler navbar-icon" type="a" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="border: none; outline: none; cursor: pointer; margin-right: 30px;">
+                            <i class="fa-solid fa-bars fa-xl" style="color: var(--main-color)"></i>                      
+                        </a>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <span class="logoText">Shelter <sub>resort</sub> </span>
+                            <a class="toogle-close" data-bs-dismiss="offcanvas" aria-label="Close" style="cursor: pointer;">
+                                <i class='bx bx-x fa-2x' style="color:var(--main-color)"></i>
+                              </a>                           
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item my-2">
+                              <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item my-2">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item my-2 dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                              </a>
+                              <ul class="dropdown-menu account-menu">
+                                <li  class="my-2"><a class="dropdown-item account-item" href="#"><i class="fa-solid fa-user-tie me-2"></i>Profile</a></li>
+                                <li  class="my-2"><a class="dropdown-item account-item" href="#"><i class="fa-solid fa-key me-2"></i>Change Password</a></li>
+                                <li  class="my-2">
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li class="my-2"><a class="dropdown-item" href="#"><i class="fa-solid fa-unlock me-2"></i>LogOut</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+                <!-- top navbar -->
+
+            <div class="order-container">
+                <div class="order-main">
+                <div class="row px-lg-3">
+
+                        <!-- table row -->
+                        <div class="col-lg-8">
+                            <ul class="order-table">
+                                <li class="order-table-header">
+                                <div class="col col-2">Room</div>
+                                <div class="col col-2">Room Type</div>
+                                <div class="col col-2">Room Price</div>
+                                <div class="col col-3">Nights</div>
+                                <div class="col col-2">Total Price</div>
+                                <div class="col col-1"></div>
+                                </li>
+                                <li class="order-table-row">
+                                <div class="col col-2" data-label="Room">
+                                    <img src="../images/singleRoom1.jpg" alt="" style="width: 80px;" class="img-thumbnail">
+                                </div>
+                                <div class="col col-2" data-label="Room Type">Single Room</div>
+                                <div class="col col-2" data-label="Room Price">$265</div>
+                                <div class="col col-3" data-label="Total Night">
+                                    <div class="input-group mx-auto" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-dark btn-minus" >
+                                            <i class="fa fa-minus text-white"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm border-0 text-center night-value" value="1">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-dark btn-plus">
+                                                <i class="fa fa-plus text-white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-2" data-label="Total Price">USD 1000</div>
+                                <div class="col col-1">
+                                    <button class="btn btn-sm btn-danger btnRemove" style="width: 30px;" ><i class="fa fa-times"></i></button>
+                                </div>
+                                </li>
+                                <li class="order-table-row">
+                                    <div class="col col-2" data-label="Room">
+                                        <img src="../images/doubleRoom.jpg" alt="" style="width: 80px;" class="img-thumbnail">
+                                    </div>
+                                    <div class="col col-2" data-label="Room Type">Single Room</div>
+                                    <div class="col col-2" data-label="Room Price">$265</div>
+                                    <div class="col col-3" data-label="Total Night">
+                                        <div class="input-group mx-auto" style="width: 100px;">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-sm btn-dark btn-minus" >
+                                                <i class="fa fa-minus text-white"></i>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control form-control-sm border-0 text-center night-value" value="1">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-sm btn-dark btn-plus">
+                                                    <i class="fa fa-plus text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-2" data-label="Total Price">USD 1000</div>
+                                    <div class="col col-1">
+                                        <button class="btn btn-sm btn-danger btnRemove" style="width: 30px;" ><i class="fa fa-times"></i></button>
+                                    </div>
+                                    </li>
+                                    <li class="order-table-row">
+                                        <div class="col col-2" data-label="Room">
+                                            <img src="../images/family-room.jpg" alt="" style="width: 80px;" class="img-thumbnail">
+                                        </div>
+                                        <div class="col col-2" data-label="Room Type">Single Room</div>
+                                        <div class="col col-2" data-label="Room Price">$265</div>
+                                        <div class="col col-3" data-label="Total Night">
+                                            <div class="input-group mx-auto" style="width: 100px;">
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-sm btn-dark btn-minus" >
+                                                    <i class="fa fa-minus text-white"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="text" class="form-control form-control-sm border-0 text-center night-value" value="1">
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-sm btn-dark btn-plus">
+                                                        <i class="fa fa-plus text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-2" data-label="Total Price">USD 1000</div>
+                                        <div class="col col-1">
+                                            <button class="btn btn-sm btn-danger btnRemove" style="width: 30px;" ><i class="fa fa-times"></i></button>
+                                        </div>
+                                        </li>
+                                        
+                                
+                            </ul>
+                        </div>
+                        <!-- table row -->
+
+                        <!-- Total Summary -->
+                        <div class="col-lg-4 total-summary">
+                            <div class="total-title mt-2">
+                                <a href="../html/room.html">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><i class="fa-solid fa-cash-register me-2 mt-3"></i>Total Cash</h3>
+                            </div>
+                                <div class="order-details my-4">
+                                    <div class="sub-total  d-flex justify-content-lg-between mb-2">
+                                        <h6 class="ms-4">Only For Room</h6>
+                                        <span class="me-4">USD 1000</span>
+                                    </div>
+                                    <div class="sub-total d-flex justify-content-lg-between align-content-center mb-2">
+                                        <h6 class="ms-4">Transition Fee</h6>
+                                        <span class="me-4">$3</span>
+                                    </div>
+                                    <div class="sub-total d-flex justify-content-lg-between align-content-center mb-2">
+                                        <h6 class="ms-4">Tax Fee</h6>
+                                        <span class="me-4">$2</span>
+                                    </div>
+                                    <hr class="mx-3">
+                                    <div class="order-total d-flex justify-content-lg-between align-content-center mb-2">
+                                        <h6 class="ms-4">Summary Total</h6>
+                                        <span class="me-4">USD 2500</span>
+                                    </div>
+                                    <hr class="mx-3">
+                                    <div class="order-book">
+
+                                        <button type="button" class="pre-book"  data-bs-toggle="modal" data-bs-target="#paymentDrop">Proceed to Book</button>
+                                        <!-- Payment -->
+                                        <div class="modal fade" id="paymentDrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentDropLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content" style="background-color: var(--button-color)">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title " id="paymentDropLabel">Confirm your payment</h1>
+                                                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <h5>Payment Method</h5>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                <i class="fa-solid fa-credit-card mx-2"></i>Debit or Credit Card
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                <i class="fa-brands fa-paypal mx-2"></i>   Paypal
+                                                            </label>
+                                                        </div>
+                                                        
+                                                        <form action="" class="credit-card my-4" id="credit-card">
+
+                                                            <div class="form-items">
+                                                                <div class="row">
+                                                                     <div class="col-6">
+                                                                         <input type="text" class="input-name" style="width: 220px;"> <span class="text-field">Email</span>
+                                                                     </div>
+                                                                     <div class="col-6">
+                                                                         <input type="text" class="input-name" style="width: 220px;"> <span class="text-field">Card  Holdername</span>
+                                                                     </div>
+                                                                </div>
+                                                             </div>
+     
+                                                             <div class="form-items mt-3">
+                                                                 <div class="row">
+                                                                     <div class="col-md-6">
+                                                                         <input name="credit-number" id="cc-number" class="cc-number"  maxlength="20" type="tel" autocomplete="cc-number" pattern="" placeholder="Card number" style="width: 220px;">
+                                                                         <span class="text-field">Credit Card Number</span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                         <input name="credit-cvc" id="cc-cvc" class="cc-cvc" type="tel" autocomplete="off" maxlength="4" placeholder="CVC" style="width: 220px;">
+                                                                         <span class="text-field">Security Code</span>
+                                                                     </div>
+                                                                </div>
+                                                             </div>
+     
+                                                             <div class="form-items mt-3">
+                                                                 <div class="row">
+                                                                     <div class="col-md-6">
+                                                                         <input name="credit-expires" id="cc-exp" class="cc-expires" type="tel" autocomplete="cc-exp" maxlength="7" placeholder="MM / YY" style="width: 220px;">
+                                                                         <span class="text-field">Card Expiration</span>
+                                                                     </div>
+                                                                     <div class="col-md-6">
+                                                                        <div class="col-md-6">
+                                                                            <input type="tel" name="phnumber" id="phone" class="phone" placeholder="+959-XXXXXXXXX" style="width: 220px;">
+                                                                            <span class="text-field">Phone number</span>
+                                                                        </div>
+                                                                     </div>
+                                                                 </div>
+                                                             </div>
+                                                             <hr class="mx-2 mt-3" style="height: 2px; color:#fefefe;">
+                                                             <div class="form-items">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <input type="text"  name="guests" id="guest" class="guests" placeholder="adults- /child- " style="width: 220px;">
+                                                                        <span class="text-field">Guests</span>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <input type="datetime-local" placeholder="select checkin date..." id="checkin-date" class="checkin-date" name="checkin" style="width: 220px">
+                                                                        <label for="arrive" class="label-date">
+                                                                            <span class="text-field">Checkin Date</span>  
+                                                                    </div>
+                                                                </div>
+                                                             </div>
+     
+                                                        </form>
+                                                        <div class="final-payment mt-3"><span>Your payment</span> <i class="fa-brands fa-gg mx-2"></i> <span>USD 2500</span></div>
+                                                    </div> 
+                                                    
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="confirm-pay">Confirmed Your Pay</button>
+                                                        <button type="button" class="cancel-pay" data-bs-dismiss="modal">Cancel</button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="remove-book">Remove your Book</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Footer -->
+            <footer class="footer" id="footer">
+                <div class="main-footer">
+                    <div class="footer-log">
+                         <div class="footer-main-title text-center">
+                                <i class="fa-solid fa-umbrella-beach footer-icon"></i>
+                                <span class="footer-title">Shelter <sub>resort</sub> </span>
+                        </div>
+                            <p>Thanks for your visiting to our resort. <br>
+                                Since it is a beach resort that provides the best services, we invite you to come and relax!</p>
+                        <ul class="social-media">
+                            <li>
+                                <div class="social-app">
+                                    <a href="#"><i class='bx bxl-facebook mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin mx-2'></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="first-footer mt-3">
+                        <h5 class="footer-subtitle">Get In Touch</h5>
+                        <ul class="text-white footer-about">
+                            <li>
+                                <header>Reservation Time</header>
+                                <div class="ps-3">
+                                    <i class='bx bx-stopwatch' style=" color: var(--text-color);"></i> <span>6AM to 00AM - (Monday~Saturday)</span> <br>
+                                    <i class='bx bx-stopwatch' style=" color: var(--text-color);"></i> <span>8AM to 00AM - (Sunday)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <header>Located</header>
+                                <div class="ps-3">
+                                    <i class='bx bx-current-location' style="padding-right: 5px;  color: var(--text-color);" ></i>
+                                    <span>14 km from Canggu Beach, Bali</span>
+                                </div>
+                            </li>
+                            <li>
+                                <header>Contact Us</header>
+                                <div class="ps-3">
+                                    <span class="d-block"><i class="fa-solid fa-phone-volume" style="padding-right: 5px;  color: var(--text-color); font-size: 12px;"></i>+65-123-456-789</span>
+                                    <span><i class="fa-solid fa-envelope-circle-check" style="padding-right: 5px;  color: var(--text-color); font-size: 12px;"></i>shelter-resort.mm.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="second-footer mt-3">
+                        <h5 class="footer-subtitle">Support</h5>
+                        <ul class="text-white support">
+                            <li>Promotions</li>
+                            <li>Events</li>
+                            <li>Blog</li>
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Learn More</li>
+                        </ul>
+                    </div>
+    
+                    <div class="third-footer mt-3">
+                        <h5 class="footer-subtitle">Feedback</h5>
+                        <form class="feedback-form">
+                            <div class="form-item position-relative" >
+                                <label for="username" class="form-label login-label text-white">Email</label>
+                                <input type="email" id="username" style="width: 200px; padding: 5px;" class="shadow-lg">
+                            </div>
+                            <div class="form-item position-relative mt-3" >
+                                <label for="address" class="form-label text-white register-label">Message</label>
+                                <textarea name="" id="address" cols="30" rows="3" class="form-control shadow-sm ps-3" style="width: 200px; padding: 5px; border-radius: 10px; font-size: 13px;font-family:'Lora', serif;font-weight: 400;" class="shadow-lg" ></textarea>
+                            </div>
+                             <div class="form-item mt-2">
+                                <button type="submit" class="footer-btn">Send
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>       
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    <hr class="text-white mx-5">
+                    <p class="copyright"> &copy All Rights Reserved. Desinged by <span style="color: var(--text-color); font-size: 20px;">Wallie</span></p>
+            </footer>
+</body>
+<!-- Boostrap Popper Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js" integrity="sha512-vBu5d4hztWcpvKmp+qUS8afvWUMjTd59Z7ci0j6YnKu83yy6Xh/VxtgZqIteIFaK3gMYDm0AnOp3pEF4z6afMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput.min.js" integrity="sha512-x1RjK1QHIg0CA4lP7CFG98UXDy04pYBPuepiMd4bkJ7sqEfAPHNmVbkBxVDG3zpnolqMX2cd1mX13HlvwZfA8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/order.js"></script>
+</html>

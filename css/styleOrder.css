@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;500&family=Quicksand:wght@300;400;600;800&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--button-color);
+  border-radius: 5px;
+}
+
+:root {
+  --text-color:#a7ff83;
+  --button-color: #0a2647;
+  --main-color:#fefefe;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: linear-gradient(144deg, rgba(192, 192, 192, 0.03) 0%, rgba(192, 192, 192, 0.03) 23%,rgba(36, 36, 36, 0.03) 23%, rgba(36, 36, 36, 0.03) 29%,rgba(248, 248, 248, 0.03) 29%, rgba(248, 248, 248, 0.03) 44%,rgba(250, 250, 250, 0.03) 44%, rgba(250, 250, 250, 0.03) 61%,rgba(36, 36, 36, 0.03) 61%, rgba(36, 36, 36, 0.03) 100%),linear-gradient(200deg, rgba(81, 81, 81, 0.03) 0%, rgba(81, 81, 81, 0.03) 68%,rgba(36, 36, 36, 0.03) 68%, rgba(36, 36, 36, 0.03) 82%,rgba(187, 187, 187, 0.03) 82%, rgba(187, 187, 187, 0.03) 95%,rgba(13, 13, 13, 0.03) 95%, rgba(13, 13, 13, 0.03) 97%,rgba(107, 107, 107, 0.03) 97%, rgba(107, 107, 107, 0.03) 100%),linear-gradient(228deg, rgba(248, 248, 248, 0.03) 0%, rgba(248, 248, 248, 0.03) 25%,rgba(125, 125, 125, 0.03) 25%, rgba(125, 125, 125, 0.03) 28%,rgba(228, 228, 228, 0.03) 28%, rgba(228, 228, 228, 0.03) 32%,rgba(185, 185, 185, 0.03) 32%, rgba(185, 185, 185, 0.03) 84%,rgba(82, 82, 82, 0.03) 84%, rgba(82, 82, 82, 0.03) 100%),linear-gradient(244deg, rgba(15, 15, 15, 0.03) 0%, rgba(15, 15, 15, 0.03) 35%,rgba(224, 224, 224, 0.03) 35%, rgba(224, 224, 224, 0.03) 52%,rgba(251, 251, 251, 0.03) 52%, rgba(251, 251, 251, 0.03) 69%,rgba(83, 83, 83, 0.03) 69%, rgba(83, 83, 83, 0.03) 72%,rgba(219, 219, 219, 0.03) 72%, rgba(219, 219, 219, 0.03) 100%),linear-gradient(338deg, rgba(57, 57, 57, 0.03) 0%, rgba(57, 57, 57, 0.03) 32%,rgba(166, 166, 166, 0.03) 32%, rgba(166, 166, 166, 0.03) 54%,rgba(161, 161, 161, 0.03) 54%, rgba(161, 161, 161, 0.03) 56%,rgba(158, 158, 158, 0.03) 56%, rgba(158, 158, 158, 0.3) 61%,rgba(25, 25, 25, 0.03) 61%, rgba(25, 25, 25, 0.03) 100%),linear-gradient(90deg, rgb(225, 225, 225),rgb(231, 231, 231));
+}
+
+.order-container {
+  background: linear-gradient(360deg, rgb(198, 194, 194), rgba(0, 0, 0, 0.3));
+  margin: 70px 20px 80px 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.order-main {
+  max-width: 2000px;
+  padding: 15px 10px;
+}
+
+.order-container ul {
+  margin-right: 1.5rem;
+}
+
+.order-table li {
+  border-radius: 3px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.order-table-header {
+  background: linear-gradient(
+    180deg,
+    rgba(11, 15, 15, 0.9),
+    var(--button-color)
+  );
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.8);
+  color: #e5e0e0;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+.order-table-row {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--button-color);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.col-1 {
+  flex-basis: 10%;
+}
+.col-2 {
+  flex-basis: 45%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+
+.fa-xmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: var(--button-color);
+}
+
+.fa-xmark:hover {
+  text-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.8);
+  transform: scale3d(1.2, 1.2, 1.3);
+  transition: all 0.6s;
+}
+
+/* total summary */
+.total-summary {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  height: 460px;
+}
+
+.total-title {
+  position: relative;
+}
+
+.total-title h3 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--button-color);
+  margin-left: 30px;
+}
+
+.fa-cash-register {
+  font-size: 18px;
+}
+
+.order-details {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 0 5px 0;
+}
+
+.sub-total,
+.order-total {
+  color: var(--button-color);
+}
+
+.sub-total h6 {
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sub-total span {
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.order-total h6 {
+  font-family: "Lora", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.order-total span {
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.order-book {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin: 20px auto;
+}
+
+.order-book .pre-book {
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--main-color);
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.order-book .remove-book {
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: rgb(215, 0, 0);
+  color: var(--main-color);
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+}
+
+.pre-book:hover,
+.remove-book:hover {
+  transition: all 0.6s;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.8);
+  transform: scale3d(1.05, 1.05, 1.2);
+}
+
+.pre-book:active,
+.remove-book:active {
+  transition: all 0.8s;
+  opacity: 0.5;
+}
+
+/* top navbar */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Lora", serif;
+  margin-left: 50px;
+}
+
+.logoPhoto {
+  padding-right: 10px;
+  height: 40px;
+}
+
+.logoText {
+  font-size: 30px;
+  color: var(--text-color);
+  font-family: "Dancing Script", cursive;
+  text-shadow: 5px 3px 3px var(--button-color);
+}
+
+.fa-umbrella-beach {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-right: 10px;
+  text-shadow: 5px 3px 0px var(--button-color);
+}
+
+.fixed-top {
+  background: linear-gradient(45deg, rgba(11, 15, 15), var(--button-color));
+  box-shadow: 0 8px 16px var(--button-color);
+  height: 55px;
+}
+
+.navbar-toggler-icon {
+  background-color: var(--text-color);
+  border-radius: 5px;
+}
+
+#offcanvasNavbar {
+  background: linear-gradient(45deg, rgba(11, 15, 15), var(--button-color));
+  width: 250px;
+}
+
+.offcanvas-body .nav-link {
+  color: var(--main-color);
+  font-size: 22px;
+  font-weight: 600px;
+  font-family: "Quicksand", serif;
+}
+
+.dropdown {
+  transition: all 0.5s;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.dropdown .account-menu {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 200px;
+  /* background-color: rgb(255, 255, 255,0.3); */
+  background-color: var(--text-color);
+}
+
+.dropdown .account-menu .account-item {
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--button-color);
+  letter-spacing: 1.05px;
+  transition: all 0.6s;
+}
+
+.dropdown .account-menu li a:hover {
+  color: #000;
+  filter: brightness(1.2);
+  transition: 1s;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(180deg, rgba(11, 15, 15), var(--button-color));
+  box-shadow: 0 -8px 16px var(--button-color);
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-log {
+  margin-top: 40px;
+}
+
+.footer-log p {
+  width: 265px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-title {
+  font-size: 30px;
+  color: var(--text-color);
+  font-family: "Dancing Script", cursive;
+  text-shadow: 5px 3px 0px var(--button-color);
+  text-align: center;
+}
+
+.footer-icon {
+  color: var(--text-color);
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.social-media {
+  margin: 5px;
+}
+
+.social-app i {
+  font-size: 30px;
+  color: var(--text-color);
+  transition: all 0.6s;
+}
+
+.social-app i:hover {
+  transform: scale3d(1.2, 1.2, 1.5);
+}
+
+.footer-subtitle {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.footer-btn {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 5px;
+  width: 200px;
+  color: var(--button-color);
+  background-color: var(--text-color);
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.fa-paper-plane {
+  color: var(--button-color);
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-about li {
+  margin-bottom: 15px;
+}
+
+.footer-about header {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: "Lora", serif;
+}
+
+.footer-about span {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.support {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.support li {
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.copyright {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--main-color);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.feedback-form {
+  width: 200px;
+}
+
+input[type="email"] {
+  font-size: 13px;
+  font-family: "Lora", serif;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5px 8px 10px;
+  width: 100%;
+  border-bottom: 2px solid var(--button-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* payment */
+.modal-title{
+  font-size: 23px;
+  font-family: 'Lora',serif;
+  letter-spacing: 0.1rem;
+  color: var(--main-color);
+}
+
+.modal-body h5{
+  font-size: 18px;
+  font-family: 'Quicksand',sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  color: var(--main-color);
+}
+
+.modal-body .form-check .form-check-label{
+  font-size: 15px;
+  font-family: 'Quicksand',sans-serif;
+  letter-spacing: 0.07rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/* form credit card */
+::placeholder{
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 8px;
+}
+
+.input-name, .cc-number, .cc-cvc, .cc-expires, .guests, .checkin-date, .phone{
+  padding: 5px;
+  font-size: 13px;
+  font-family: 'Lora',serif;
+  letter-spacing: 1.1px;
+  color: var(--main-color);
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 5px ;
+  outline: none;
+  transition:all 0.7s;
+}
+
+.input-name:focus, .cc-number:focus, .cc-cvc:focus, .cc-expires:focus, .guests:focus, .checkin-date:focus, .phone:focus{
+  border:2px solid  var(--main-color);
+  transform: scale(1.05);
+}
+
+input[type="email"],input[type="text"],input[type="tel"],input[type="datetime-local"] {
+  padding-left: 10px;
+}
+
+
+
+.form-items .text-field{
+  color: var(--main-color);
+  /* color: var(--button-color); */
+  font-family: 'Quicksand',sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+}
+
+.final-payment{
+  padding: 5px 10px;
+  background-color:var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+}
+
+.final-payment span{
+  font-family: 'Lora',serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--button-color);
+  letter-spacing: 1.1px;
+}
+
+.confirm-pay{
+  font-family: 'Lora',serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--button-color);
+  background-color: var(--text-color);
+  padding: 8px;
+  width: 200px;
+  border:none;
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 0.05rem;
+}
+
+.cancel-pay{
+  font-family: 'Lora',serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+  background-color: rgb(215, 0, 0);
+  padding: 8px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 0.05rem;
+}
+
+.confirm-pay:hover,
+.cancel-pay:hover {
+  transition: all 0.8s;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.8);
+  transform: scale3d(1.05, 1.05, 1.2);
+}
+
+.confirm-pay:active,
+.cancel-pay:active {
+  transition: all 0.8s;
+  opacity: 0.5;
+}

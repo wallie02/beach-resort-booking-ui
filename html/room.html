@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleRoom.css">
+     <!-- box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Boostrap Css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Beach Resort Booking</title>
+</head>
+<body>
+    <div class="room-type container-fluid">
+
+            <!-- top navbar -->
+                <nav class="navbar fixed-top">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span class="logoText">Shelter <sub>resort</sub> </span>
+                        </div>
+            
+                      <a class="navbar-toggler navbar-icon" type="a" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="border: none; outline: none; cursor: pointer; margin-right: 30px;">
+                        <i class="fa-solid fa-bars fa-xl" style="color: var(--main-color)"></i>                      
+                    </a>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <span class="logoText">Shelter <sub>resort</sub> </span>
+                          <a class="toogle-close" data-bs-dismiss="offcanvas" aria-label="Close" style="cursor: pointer;">
+                            <i class="fa-solid fa-xmark fa-xl" style="color: var(--main-color);"></i>
+                          </a>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item my-2">
+                              <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item my-2">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item my-2 dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                              </a>
+                              <ul class="dropdown-menu account-menu">
+                                <li  class="my-2"><a class="dropdown-item account-item" href="#"><i class="fa-solid fa-user-tie me-2"></i>Profile</a></li>
+                                <li  class="my-2"><a class="dropdown-item account-item" href="#"><i class="fa-solid fa-key me-2"></i>Change Password</a></li>
+                                <li  class="my-2">
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li class="my-2"><a class="dropdown-item" href="#"><i class="fa-solid fa-unlock me-2"></i>LogOut</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2 text-white" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-success text-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+            <!-- top navbar -->
+
+            <div class="row" style="margin: 80px 0 20px 0;">
+
+                <!-- side navbar -->
+                <div class="side-navbar col-3">
+                  <div class="room-category p-4 mb-30">
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-5">
+                            <label class="custom-control-label roomAll" for="room-all">Room Types</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center mb-3">
+                            <label class="custom-control-label roomType" for="room-1">Single Room</label>
+                        </div>
+                        <hr>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center mb-3">
+                            <label class="custom-control-label roomType" for="room-2">Double Room</label>
+                        </div>
+                        <hr>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center mb-3">
+                            <label class="custom-control-label roomType" for="room-3">Family Room</label>
+                        </div>
+                        <hr>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center mb-3">
+                            <label class="custom-control-label roomType" for="room-4">Premium Room</label>
+                        </div>
+                        <hr>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-center">
+                            <label class="custom-control-label roomType" for="room-5">Package Room</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mt-5">
+                          <a href="../html/order.html">
+                            <button type="button" class="bookBtn text-center"><i class='bx bxs-check-circle me-1'></i>Books</button>
+                          </a>
+                          <a href="../html/index.html">
+                            <button type="button" class="backBtn text-center"><i class='bx bx-log-out-circle me-1'></i>Back</button>
+                          </a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                <!-- side navbar -->
+    
+                <!-- main section -->
+                <section class="col-9">
+                        <!-- Rooms type -->
+                        <div class="main-room rooms">
+                                    <div class="rooms">
+                                        <div class="spk-img">
+                                            <img class="img-fluid" src="../images/singleRoom1.jpg" alt="trainer-img" />
+
+                                            <ul>
+                                                <li>
+                                                    <a href="../html/details.html"><i class='bx bxs-info-circle room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="../html/receipt.html"><i class='bx bx-shopping-bag room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-envelope room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-phone-call room-icons' ></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="room-info">
+                                            <div class="d-flex justify-content-between my-1">
+                                                <h3 class="text-center">Single Room <sub class="rating">(5)</sub></h3>
+                                                <div class="d-flex">
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                </div>
+                                            </div>
+                                            <span class="facilites text-muted">Coffee Kit, Toiletries, Personal care, Free Wi-Fi,...</span>
+                                            <div class="price text-muted text-center my-2">guranteed best price</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="rooms">
+                                        <div class="spk-img">
+                                            <img class="img-fluid" src="../images/doubleRoom.jpg" alt="trainer-img" />
+
+                                            <ul>
+                                                <li>
+                                                    <a href="../html/details.html"><i class='bx bxs-info-circle room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bx-shopping-bag room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-envelope room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-phone-call room-icons' ></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="room-info">
+                                            <div class="d-flex justify-content-between my-1">
+                                                <h3 class="text-center">Single Room <sub class="rating">(5)</sub></h3>
+                                                <div class="d-flex">
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                </div>
+                                            </div>
+                                            <span class="facilites text-muted">Coffee Kit, Toiletries, Personal care, Free Wi-Fi,...</span>
+                                            <div class="price text-muted text-center my-2">guranteed best price</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="rooms">
+                                        <div class="spk-img">
+                                            <img class="img-fluid" src="../images/family-room.jpg" alt="trainer-img" />
+                                            <ul>
+                                                <li>
+                                                    <a href="../html/details.html"><i class='bx bxs-info-circle room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bx-shopping-bag room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-envelope room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-phone-call room-icons' ></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="room-info">
+                                            <div class="d-flex justify-content-between my-1">
+                                                <h3 class="text-center">Single Room <sub class="rating">(5)</sub></h3>
+                                                <div class="d-flex">
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                </div>
+                                            </div>
+                                            <span class="facilites text-muted">Coffee Kit, Toiletries, Personal care, Free Wi-Fi,...</span>
+                                            <div class="price text-muted text-center my-2">guranteed best price</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="rooms">
+                                        <div class="spk-img">
+                                            <img class="img-fluid" src="../images/vvip.jpg" alt="trainer-img" />
+                                            <ul>
+                                                <li>
+                                                    <a href="../html/details.html"><i class='bx bxs-info-circle room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bx-shopping-bag room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-envelope room-icons'></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class='bx bxs-phone-call room-icons' ></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="room-info">
+                                            <div class="d-flex justify-content-between my-1">
+                                                <h3 class="text-center">Single Room <sub class="rating">(5)</sub></h3>
+                                                <div class="d-flex">
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                    <small><i class='bx bxs-star'></i></small>
+                                                </div>
+                                            </div>
+                                            <span class="facilites text-muted">Coffee Kit, Toiletries, Personal care, Free Wi-Fi,...</span>
+                                            <div class="price text-muted text-center my-2">guranteed best price</div>
+                                        </div>
+                                    </div>
+                        </div>
+
+                </section>
+                <!-- main section -->
+
+            </div>
+    </div>
+
+            <!-- Footer -->
+            <footer class="footer" id="footer">
+                <div class="main-footer">
+                    <div class="footer-log">
+                         <div class="footer-main-title text-center">
+                                <i class="fa-solid fa-umbrella-beach footer-icon"></i>
+                                <span class="footer-title">Shelter <sub>resort</sub> </span>
+                        </div>
+                            <p>Thanks for your visiting to our resort. <br>
+                                Since it is a beach resort that provides the best services, we invite you to come and relax!</p>
+                        <ul class="social-media">
+                            <li>
+                                <div class="social-app">
+                                    <a href="#"><i class='bx bxl-facebook mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-instagram mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter mx-2'></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin mx-2'></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="first-footer mt-3">
+                        <h5 class="footer-subtitle">Get In Touch</h5>
+                        <ul class="text-white footer-about">
+                            <li>
+                                <header>Reservation Time</header>
+                                <div class="ps-3">
+                                    <i class='bx bx-stopwatch' style=" color: var(--text-color);"></i> <span>6AM to 00AM - (Monday~Saturday)</span> <br>
+                                    <i class='bx bx-stopwatch' style=" color: var(--text-color);"></i> <span>8AM to 00AM - (Sunday)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <header>Located</header>
+                                <div class="ps-3">
+                                    <i class='bx bx-current-location' style="padding-right: 5px;  color: var(--text-color);" ></i>
+                                    <span>14 km from Canggu Beach, Bali</span>
+                                </div>
+                            </li>
+                            <li>
+                                <header>Contact Us</header>
+                                <div class="ps-3">
+                                    <span class="d-block"><i class="fa-solid fa-phone-volume" style="padding-right: 5px;  color: var(--text-color); font-size: 12px;"></i>+65-123-456-789</span>
+                                    <span><i class="fa-solid fa-envelope-circle-check" style="padding-right: 5px;  color: var(--text-color); font-size: 12px;"></i>shelter-resort.mm.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="second-footer mt-3">
+                        <h5 class="footer-subtitle">Support</h5>
+                        <ul class="text-white support">
+                            <li>Promotions</li>
+                            <li>Events</li>
+                            <li>Blog</li>
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Learn More</li>
+                        </ul>
+                    </div>
+    
+                    <div class="third-footer mt-3">
+                        <h5 class="footer-subtitle">Feedback</h5>
+                        <form class="feedback-form">
+                            <div class="form-item position-relative" >
+                                <label for="username" class="form-label login-label text-white">Email</label>
+                                <input type="email" id="username" style="width: 200px; padding: 5px;" class="shadow-lg">
+                            </div>
+                            <div class="form-item position-relative mt-3" >
+                                <label for="address" class="form-label text-white register-label">Message</label>
+                                <textarea name="" id="address" cols="30" rows="3" class="form-control shadow-sm ps-3" style="width: 200px; padding: 5px; border-radius: 10px; font-size: 13px;font-family:'Lora', serif;font-weight: 400;" class="shadow-lg" ></textarea>
+                            </div>
+                             <div class="form-item mt-2">
+                                <button type="submit" class="footer-btn">Send
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>       
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    <hr class="text-white mx-5">
+                    <p class="copyright"> &copy All Rights Reserved. Desinged by <span style="color: var(--text-color); font-size: 20px;">Wallie</span></p>
+            </footer>
+
+            <!-- Back to top -->
+            <button class="btn back-to-top btn-light" id="backToTop"><i class="fa fa-angle-double-up"></i></button>
+
+       
+</body>
+<!-- Boostrap Popper Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="../js/room.js"></script>
+</html>
