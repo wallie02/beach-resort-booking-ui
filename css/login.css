@@ -193,7 +193,7 @@ input[type="checkbox"]{
 
 /* col-4 text-register */
 .text-register{
-    background-image:url('../images/newbeach.png');
+    background-image:url('images/newbeach.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
